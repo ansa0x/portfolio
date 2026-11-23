@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anusha Ghimire · Software Engineer</title>
+  <meta name="description" content="Anusha Ghimire — full-stack software engineer. M.S. Computer Science at Syracuse University. React, React Native, Node.js, Spring Boot, PostgreSQL, Python and ML services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ Ambient sky (stars + drifting clouds) ============ -->
+  <div class="sky" aria-hidden="true">
+    <div class="stars" id="stars"></div>
+    <div class="cloud-lane">
+      <span class="sprite cloud c1" data-sprite="skyCloud" data-scale="6"></span>
+      <span class="sprite cloud c2" data-sprite="skyCloud" data-scale="5"></span>
+      <span class="sprite cloud c3" data-sprite="skyCloudSmall" data-scale="5"></span>
+    </div>
+  </div>
+
+  <!-- ============ Navigation ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner panel">
+      <a class="brand" href="#home" aria-label="Anusha Ghimire, back to top">
+        <span class="sprite" data-sprite="code" data-scale="3"></span>
+        <span class="brand-text">ANUSHA.G</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">MENU</button>
+      <nav id="navLinks" class="nav-links" aria-label="Sections">
+        <a href="#about">ABOUT</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-scenery" aria-hidden="true">
+        <svg class="hills far" data-parallax="0.15" data-hills="far" preserveAspectRatio="none"></svg>
+        <svg class="hills mid" data-parallax="0.3" data-hills="mid" preserveAspectRatio="none"></svg>
+        <svg class="hills near" data-parallax="0.45" data-hills="near" preserveAspectRatio="none"></svg>
+        <div class="ground-props">
+          <span class="sprite" data-sprite="sprout" data-scale="4" style="left:8%"></span>
+          <span class="sprite" data-sprite="mushroom" data-scale="4" style="left:22%"></span>
+          <span class="sprite" data-sprite="sprout" data-scale="3" style="left:57%"></span>
+          <span class="sprite" data-sprite="flower" data-scale="4" style="left:78%"></span>
+          <span class="sprite" data-sprite="sprout" data-scale="4" style="left:92%"></span>
+        </div>
+      </div>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="label hero-label"><span class="blink">▶</span> PLAYER 1 · READY</p>
+          <h1><span class="hi">hi, i'm</span> anusha.</h1>
+          <p class="role">Software Engineer<span class="caret" aria-hidden="true"></span></p>
+          <p class="intro">
+            I'm a full-stack engineer who likes owning a feature from the screen down to the
+            database. These days I lead code review at <strong>Uplifty AI</strong>, shipping
+            React Native features and the ML services behind them, while finishing my M.S. in
+            Computer Science at <strong>Syracuse University</strong>.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">SEE MY WORK<i class="arr" aria-hidden="true"></i></a>
+            <a class="btn btn-ghost" href="#contact">SAY HI</a>
+          </div>
+          <ul class="socials" aria-label="Links">
+            <li><a href="https://github.com/ansa0x" target="_blank" rel="noopener"><span class="sprite" data-sprite="cat" data-scale="2" aria-hidden="true"></span>GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/anushaghimire01/" target="_blank" rel="noopener"><span class="sprite" data-sprite="badge" data-scale="2" aria-hidden="true"></span>LinkedIn</a></li>
+            <li><a href="assets/Anusha_Ghimire_Resume_SWE.pdf" target="_blank" rel="noopener"><span class="sprite" data-sprite="scroll" data-scale="2" aria-hidden="true"></span>Resume (SWE)</a></li>
+            <li><a href="assets/Anusha_Ghimire_Resume_AI_ML.pdf" target="_blank" rel="noopener"><span class="sprite" data-sprite="scroll" data-scale="2" aria-hidden="true"></span>Resume (AI/ML)</a></li>
+            <li><a href="mailto:ansa0x.dev@gmail.com"><span class="sprite" data-sprite="envelope" data-scale="2" aria-hidden="true"></span>Email</a></li>
+          </ul>
+        </div>
+
+        <!-- Hero portrait. To change the photo, replace assets/profile.png
+             (or use profile.jpg / .jpeg / .webp). No code changes needed.
+             Use a transparent-background PNG so the outline follows your silhouette. -->
+        <div class="hero-card-wrap reveal">
+          <div class="floaty f1" data-depth="18" aria-hidden="true"><span class="sprite" data-sprite="star" data-scale="4"></span></div>
+          <div class="floaty f2" data-depth="-14" aria-hidden="true"><span class="sprite" data-sprite="sparkle" data-scale="4"></span></div>
+          <div class="floaty f3" data-depth="10" aria-hidden="true"><span class="sprite" data-sprite="coin" data-scale="4"></span></div>
+          <div class="floaty f4" data-depth="-20" aria-hidden="true"><span class="sprite" data-sprite="sparkle" data-scale="3"></span></div>
+          <div class="floaty f5" data-depth="12" aria-hidden="true"><span class="sprite" data-sprite="cloudSmall" data-scale="4"></span></div>
+          <div class="floaty f6" data-depth="-8" aria-hidden="true"><span class="sprite" data-sprite="laptop" data-scale="3"></span></div>
+
+          <figure class="player-card panel" id="playerCard">
+            <div class="card-bar">
+              <span>CHARACTER SELECT</span>
+              <span class="bar-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            </div>
+
+            <div class="hero-portrait card-portrait" id="photoFrame">
+              <span class="corner tl" aria-hidden="true"></span>
+              <span class="corner tr" aria-hidden="true"></span>
+              <span class="corner bl" aria-hidden="true"></span>
+              <span class="corner br" aria-hidden="true"></span>
+              <span class="portrait-glow" aria-hidden="true"></span>
+              <span class="portrait-cutout">
+                <img id="profilePhoto" src="assets/profile.png" alt="Portrait of Anusha Ghimire" width="620" height="720" decoding="async">
+              </span>
+              <!-- Placeholder component, shown only while no photo is in assets/ -->
+              <div class="photo-placeholder" aria-hidden="true">
+                <span class="sprite" data-sprite="player" data-scale="10"></span>
+                <p>YOUR PHOTO HERE</p>
+                <small>assets/profile.png</small>
+              </div>
+            </div>
+
+            <figcaption class="nameplate">
+              <strong>ANUSHA GHIMIRE</strong>
+              <span>CLASS · Full-Stack Engineer</span>
+            </figcaption>
+
+            <dl class="attrs">
+              <div><dt>BASE</dt><dd>Syracuse, NY</dd></div>
+              <div><dt>GUILD</dt><dd>Uplifty AI</dd></div>
+              <div><dt>QUEST</dt><dd>Full-time SWE · 2027</dd></div>
+            </dl>
+          </figure>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="Scroll to About">
+        <span>SCROLL</span><i class="arr down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <h2><span class="slash">/</span> about me</h2>
+          <span class="head-rule" aria-hidden="true"></span>
+          <span class="sprite head-icon" data-sprite="player" data-scale="3" aria-hidden="true"></span>
+        </header>
+
+        <div class="about-grid">
+          <div class="panel window reveal">
+            <div class="window-bar"><span>about.txt</span><span class="bar-dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="window-body prose">
+              <p>
+                I got into software through the satisfying click of a program finally working,
+                and I've stayed for the people who use what I build. Most of my work sits where
+                product, data and reliability meet: the screen a user taps, the schema and access
+                rules under it, and the service that answers the request.
+              </p>
+              <p>
+                Leading code review for a team taught me that a lot of engineering is quiet work:
+                reading closely, asking what happens when something fails, and making the safe
+                path the default one. I enjoy that as much as shipping something new.
+              </p>
+              <p>
+                Outside of work I build small tools that scratch my own itch, like a browser
+                extension that explains jargon in plain language.
+              </p>
+            </div>
+          </div>
+
+          <div class="panel window reveal">
+            <div class="window-bar"><span>status.cfg</span></div>
+            <ul class="facts">
+              <li><span class="sprite" data-sprite="star" data-scale="3"></span><div><span class="fact-k">FOCUS</span><span>Full-stack product engineering, backend APIs, ML in production</span></div></li>
+              <li><span class="sprite" data-sprite="shield" data-scale="3"></span><div><span class="fact-k">CARES ABOUT</span><span>Security, data integrity, careful code review</span></div></li>
+              <li><span class="sprite" data-sprite="flag" data-scale="3"></span><div><span class="fact-k">LOOKING FOR</span><span>Full-time software engineering roles, 2027</span></div></li>
+              <li><span class="sprite" data-sprite="heart" data-scale="3"></span><div><span class="fact-k">BASED IN</span><span>Syracuse, NY</span></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section-feature" id="experience">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <h2><span class="slash">/</span> experience</h2>
+          <span class="head-rule" aria-hidden="true"></span>
+          <span class="sprite head-icon" data-sprite="briefcase" data-scale="3" aria-hidden="true"></span>
+        </header>
+
+        <div class="xp reveal">
+          <div class="xp-tabs" role="tablist" aria-label="Companies">
+            <button class="xp-tab" role="tab" id="tab-uplifty" aria-controls="xp-uplifty" aria-selected="true" tabindex="0"><span class="xp-tab-name">Uplifty AI</span><span class="xp-tab-when">Jul 2026 –</span></button>
+            <button class="xp-tab" role="tab" id="tab-qsucceed" aria-controls="xp-qsucceed" aria-selected="false" tabindex="-1"><span class="xp-tab-name">Q-SUCCEED-CNY</span><span class="xp-tab-when">Nov 2025 –</span></button>
+            <button class="xp-tab" role="tab" id="tab-wayside" aria-controls="xp-wayside" aria-selected="false" tabindex="-1"><span class="xp-tab-name">Wayside Publishing</span><span class="xp-tab-when">2024</span></button>
+          </div>
+          <div class="xp-panels">
+          <div class="xp-panel" role="tabpanel" id="xp-uplifty" aria-labelledby="tab-uplifty">
+            <article class="panel window">
+              <div class="window-bar"><span>UPLIFTY AI</span><span class="badge-live"><span class="blink">●</span> ACTIVE</span></div>
+              <div class="window-body">
+                <div class="quest-top">
+                  <h3>Full Stack AI Engineer, Team Lead</h3>
+                  <time>Jul 2026 – Present</time>
+                </div>
+                <p class="org">Uplifty AI <span>· Remote</span></p>
+                <ul class="bullets">
+                  <li>Lead technical reviews and engineering decisions for a team of <strong>6+ engineers</strong>, owning <strong>30+ pull requests</strong> end-to-end. Caught a CI/CD bug that would have sent untested service versions to 100% of traffic.</li>
+                  <li>Shipped <strong>10+ mobile features</strong> (challenge completion, notifications, profile customization, squad messaging) across React Native, PostgreSQL migrations with Row Level Security, Supabase and backend RPCs.</li>
+                  <li>Built and deployed ML scoring systems for user authenticity and reflection quality using <strong>XGBoost with SHAP</strong> explainability, so low-quality content is flagged for moderation.</li>
+                  <li>Closed <strong>9 critical security gaps</strong> in production ML model loading with a signed hash manifest and fail-closed verification.</li>
+                  <li>Fixed silent data-loss bugs and tightened validation across signup and user profiles, including E.164 phone validation.</li>
+                </ul>
+                <ul class="tags"><li>React Native</li><li>Supabase</li><li>PostgreSQL</li><li>Python</li><li>XGBoost</li><li>SHAP</li></ul>
+              </div>
+            </article>
+          </div>
+          <div class="xp-panel" role="tabpanel" id="xp-qsucceed" aria-labelledby="tab-qsucceed">
+            <article class="panel window">
+              <div class="window-bar"><span>Q-SUCCEED-CNY</span><span class="badge-live"><span class="blink">●</span> ACTIVE</span></div>
+              <div class="window-body">
+                <div class="quest-top">
+                  <h3>Software Engineering Intern</h3>
+                  <time>Nov 2025 – Present</time>
+                </div>
+                <p class="org">Q-SUCCEED-CNY <span>· Syracuse University · NSF-funded</span></p>
+                <ul class="bullets">
+                  <li>Automated applicant processing and reporting with <strong>Python and SQL</strong>, cutting manual processing time by <strong>60%</strong>.</li>
+                  <li>Analyzed <strong>100+ learner records</strong> for program outcome reporting.</li>
+                  <li>Develop and maintain the website for this quantum and semiconductor workforce program.</li>
+                </ul>
+                <ul class="tags"><li>Python</li><li>SQL</li><li>Automation</li><li>Web</li></ul>
+              </div>
+            </article>
+          </div>
+          <div class="xp-panel" role="tabpanel" id="xp-wayside" aria-labelledby="tab-wayside">
+            <article class="panel window">
+              <div class="window-bar"><span>WAYSIDE PUBLISHING</span><span class="badge-done">COMPLETE</span></div>
+              <div class="window-body">
+                <div class="quest-top">
+                  <h3>Software Engineering Intern</h3>
+                  <time>Jan 2024 – Aug 2024</time>
+                </div>
+                <p class="org">Wayside Publishing <span>· Freeport, ME</span></p>
+                <ul class="bullets">
+                  <li>Developed <strong>Spring Boot REST APIs</strong> for an interactive e-book platform serving <strong>10,000+ students</strong>.</li>
+                  <li>Improved page load performance by <strong>25%</strong> with lazy loading, code splitting and asset optimization.</li>
+                  <li>Built <strong>JUnit</strong> test suites reaching <strong>80%+ coverage</strong>.</li>
+                </ul>
+                <ul class="tags"><li>Java</li><li>Spring Boot</li><li>JUnit</li><li>JavaScript</li></ul>
+              </div>
+            </article>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-feature" id="projects">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <h2><span class="slash">/</span> featured projects</h2>
+          <span class="head-rule" aria-hidden="true"></span>
+          <span class="sprite head-icon" data-sprite="chest" data-scale="3" aria-hidden="true"></span>
+        </header>
+
+        <div class="projects">
+          <!-- SwiftChat -->
+          <article class="panel project card-lift reveal">
+            <div class="project-art art-chat" aria-hidden="true">
+              <div class="mini-window">
+                <div class="mini-bar"><i></i><i></i><i></i></div>
+                <div class="mini-chat">
+                  <div class="row"><span class="av a1"></span><span class="msg in" style="--w:58%"></span></div>
+                  <div class="row out"><span class="msg out" style="--w:44%"></span></div>
+                  <div class="row"><span class="av a2"></span><span class="msg in" style="--w:70%"></span></div>
+                  <div class="row out"><span class="msg out" style="--w:30%"></span></div>
+                  <div class="row"><span class="av a1"></span><span class="typing"><i></i><i></i><i></i></span></div>
+                </div>
+              </div>
+              <span class="sprite art-float" data-sprite="bubbleA" data-scale="5"></span>
+              <span class="sprite art-deco d1" data-sprite="cloudSmall" data-scale="4"></span>
+              <span class="sprite art-deco d2" data-sprite="star" data-scale="2"></span>
+              <span class="sprite art-deco d3" data-sprite="sparkle" data-scale="2"></span>
+              <span class="art-ground"></span>
+            </div>
+            <div class="project-body">
+              <p class="label">FULL-STACK DEVELOPMENT</p>
+              <h3>SwiftChat</h3>
+              <p class="subtitle">Real-time messaging platform</p>
+              <p>A full-stack messaging app for real-time one-on-one and group conversations, with secure authentication and live typing and notification features.</p>
+              <ul class="tags"><li>React</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Socket.IO</li><li>JWT</li><li>bcrypt</li><li>Cloudinary</li><li>Vercel</li><li>Render</li></ul>
+              <details class="more">
+                <summary><span>KEY HIGHLIGHTS</span></summary>
+                <ul class="bullets compact">
+                  <li>Real-time messaging over Socket.IO, with live typing indicators and in-app notifications.</li>
+                  <li>REST APIs for message persistence and user management.</li>
+                  <li>JWT authentication and bcrypt password hashing.</li>
+                  <li>Role-based access control for group admins, group renaming, and Cloudinary profile photo uploads.</li>
+                  <li>Frontend and backend deployed with GitHub-triggered CI/CD.</li>
+                </ul>
+              </details>
+              <div class="project-links">
+                <a class="btn btn-small" href="https://swift-chat-alpha.vercel.app" target="_blank" rel="noopener">LIVE DEMO<i class="arr" aria-hidden="true"></i></a>
+                <a class="btn btn-small btn-ghost" href="https://github.com/ansa0x/swiftChat" target="_blank" rel="noopener">GITHUB</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Problematic Internet Use -->
+          <article class="panel project card-lift reveal">
+            <div class="project-art art-chart" aria-hidden="true">
+              <div class="bars">
+                <i style="--h:38%"></i><i style="--h:56%"></i><i style="--h:44%"></i><i style="--h:72%"></i><i style="--h:64%"></i><i style="--h:85%"></i>
+              </div>
+              <div class="metric-badge"><b>84.9%</b><span>ACCURACY</span></div>
+              <span class="sprite art-float" data-sprite="sparkle" data-scale="4"></span>
+              <span class="sprite art-deco d1" data-sprite="cloudSmall" data-scale="4"></span>
+              <span class="sprite art-deco d2" data-sprite="star" data-scale="2"></span>
+              <span class="sprite art-deco d3" data-sprite="sparkle" data-scale="2"></span>
+              <span class="art-ground"></span>
+            </div>
+            <div class="project-body">
+              <p class="label">AI / MACHINE LEARNING · ACADEMIC</p>
+              <h3>Problematic Internet Use Prediction</h3>
+              <p class="subtitle">Predictive ML pipeline &amp; REST API</p>
+              <p>An end-to-end pipeline that predicts problematic internet use from behavioral health data. It covers feature engineering, a predictive model, and a containerized inference API.</p>
+              <ul class="tags"><li>Python</li><li>scikit-learn</li><li>Pandas</li><li>SMOTE</li><li>Flask</li><li>Docker</li><li>Redis</li></ul>
+              <details class="more">
+                <summary><span>KEY HIGHLIGHTS</span></summary>
+                <ul class="bullets compact">
+                  <li>Handled a dataset with <strong>63% missing values</strong> using KNN imputation.</li>
+                  <li>Balanced classes with SMOTE and reduced <strong>50+ raw features to 18</strong> predictive indicators.</li>
+                  <li>Random Forest classifier at <strong>84.9% accuracy</strong>.</li>
+                  <li>Flask REST API with request validation and JSON responses.</li>
+                  <li>Dockerized, with Redis caching that brought response time to <strong>80 ms</strong>.</li>
+                </ul>
+              </details>
+              <div class="project-links">
+                <a class="btn btn-small" href="https://github.com/CeliePierre/Problematic-Internet-Use" target="_blank" rel="noopener">GITHUB<i class="arr" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="sub-head reveal"><span class="label">SIDE QUESTS</span>More from GitHub</h3>
+        <div class="projects-small">
+          <article class="panel project-sm card-lift reveal">
+            <div class="sm-top"><span class="sprite" data-sprite="scroll" data-scale="4" aria-hidden="true"></span><p class="label">BACKEND · PERSONAL</p></div>
+            <h3>LogPulse</h3>
+            <p>A centralized log-management service. Other services send logs in with API keys and query them back by service, severity, trace ID or time range.</p>
+            <ul class="tags"><li>Java</li><li>Spring Boot</li><li>OpenSearch</li><li>MySQL</li><li>JPA</li></ul>
+            <details class="more">
+              <summary><span>DETAILS</span></summary>
+              <ul class="bullets compact">
+                <li>REST endpoints for single and batch ingestion, plus filtered search sorted newest first.</li>
+                <li>Logs written to daily-rotated OpenSearch indices and searched across all of them.</li>
+                <li>API keys generated with <code>SecureRandom</code>, stored only as SHA-256 hashes in MySQL, with expiry and ADMIN / WRITER / READER roles enforced in a request filter.</li>
+              </ul>
+            </details>
+            <a class="btn btn-small btn-ghost" href="https://github.com/ansa0x/LogPulse" target="_blank" rel="noopener">GITHUB<i class="arr" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="panel project-sm card-lift reveal">
+            <div class="sm-top"><span class="sprite" data-sprite="sparkle" data-scale="4" aria-hidden="true"></span><p class="label">AI / NLP · PERSONAL</p></div>
+            <h3>Claude Explain</h3>
+            <p>A Chrome extension: highlight a word or phrase on any page and get a short, plain-language explanation from Claude.</p>
+            <ul class="tags"><li>JavaScript</li><li>Chrome MV3</li><li>Claude API</li><li>Prompt design</li></ul>
+            <details class="more">
+              <summary><span>DETAILS</span></summary>
+              <ul class="bullets compact">
+                <li>A content script places an Explain button at the selection and renders the answer in a floating card.</li>
+                <li>The background service worker sends the selection with up to 500 characters of surrounding context, and the prompt is built to return a short explanation plus one example.</li>
+                <li>Settings popup for API key and model, stored in <code>chrome.storage.sync</code>, with clear messages for auth and rate-limit errors.</li>
+              </ul>
+            </details>
+            <a class="btn btn-small btn-ghost" href="https://github.com/ansa0x/claude-explain" target="_blank" rel="noopener">GITHUB<i class="arr" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="panel project-sm card-lift reveal">
+            <div class="sm-top"><span class="sprite" data-sprite="picture" data-scale="4" aria-hidden="true"></span><p class="label">AI / VISION · ACADEMIC</p></div>
+            <h3>Multi-label Image Classification</h3>
+            <p>A multimodal model that tags each image with any of 18 labels by reading the image together with its caption. Built for a 2024 Kaggle competition.</p>
+            <ul class="tags"><li>Python</li><li>PyTorch</li><li>Hugging Face</li><li>EfficientNet</li><li>BERT</li></ul>
+            <details class="more">
+              <summary><span>DETAILS</span></summary>
+              <ul class="bullets compact">
+                <li>Fuses EfficientNet-B5 image features with BERT caption embeddings, feeding a dense classification head trained with binary cross-entropy.</li>
+                <li>Oversampled minority labels to reduce class imbalance across ~27k training images.</li>
+                <li>Fine-tuned for 10 epochs with the Hugging Face Trainer, keeping the best checkpoint by F1: <strong>0.82 micro-F1</strong> on a 3,000-image validation split.</li>
+              </ul>
+            </details>
+            <a class="btn btn-small btn-ghost" href="https://github.com/ansa0x/multilabel-image-classification" target="_blank" rel="noopener">GITHUB<i class="arr" aria-hidden="true"></i></a>
+          </article>
+        </div>
+
+        <a class="panel project-more card-lift reveal" href="https://github.com/ansa0x" target="_blank" rel="noopener">
+          <span class="sprite" data-sprite="door" data-scale="5" aria-hidden="true"></span>
+          <div>
+            <p class="label">ALL REPOSITORIES</p>
+            <h3>github.com/ansa0x</h3>
+          </div>
+          <span class="more-arrow" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <h2><span class="slash">/</span> technical skills</h2>
+          <span class="head-rule" aria-hidden="true"></span>
+          <span class="sprite head-icon" data-sprite="potion" data-scale="3" aria-hidden="true"></span>
+        </header>
+
+        <div class="inventory">
+          <div class="panel window inv reveal">
+            <div class="window-bar"><span class="inv-title"><span class="sprite" data-sprite="scroll" data-scale="2"></span>LANGUAGES</span></div>
+            <ul class="slots"><li>Java</li><li>Python</li><li>JavaScript</li><li>SQL</li><li>C</li><li>Bash</li><li>HTML</li><li>CSS</li></ul>
+          </div>
+          <div class="panel window inv reveal">
+            <div class="window-bar"><span class="inv-title"><span class="sprite" data-sprite="phone" data-scale="2"></span>FRONTEND &amp; MOBILE</span></div>
+            <ul class="slots"><li>React</li><li>React Native</li><li>HTML/CSS</li><li>Responsive UI</li></ul>
+          </div>
+          <div class="panel window inv reveal">
+            <div class="window-bar"><span class="inv-title"><span class="sprite" data-sprite="gear" data-scale="2"></span>BACKEND &amp; APIS</span></div>
+            <ul class="slots"><li>Node.js</li><li>Express.js</li><li>Spring Boot</li><li>Flask</li><li>Socket.IO</li><li>REST API design</li><li>JWT auth</li></ul>
+          </div>
+          <div class="panel window inv reveal">
+            <div class="window-bar"><span class="inv-title"><span class="sprite" data-sprite="chest" data-scale="2"></span>DATABASES</span></div>
+            <ul class="slots"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Redis</li><li>Supabase</li><li>Row Level Security</li></ul>
+          </div>
+          <div class="panel window inv inv-wide reveal">
+            <div class="window-bar"><span class="inv-title"><span class="sprite" data-sprite="sparkle" data-scale="2"></span>AI &amp; MACHINE LEARNING</span></div>
+            <ul class="slots"><li>scikit-learn</li><li>XGBoost</li><li>SHAP</li><li>Pandas</li><li>Random Forest</li><li>SMOTE</li><li>Feature engineering</li><li>Model evaluation</li><li>KNN imputation</li><li>Model integrity verification</li></ul>
+          </div>
+          <div class="panel window inv inv-wide reveal">
+            <div class="window-bar"><span class="inv-title"><span class="sprite" data-sprite="cloudSmall" data-scale="2"></span>CLOUD, DEVOPS &amp; TOOLS</span></div>
+            <ul class="slots"><li>AWS EC2</li><li>AWS S3</li><li>AWS SQS</li><li>Docker</li><li>Git</li><li>GitHub</li><li>GitHub Actions</li><li>Vercel</li><li>Render</li><li>Linux</li><li>CI/CD</li></ul>
+          </div>
+          <div class="panel window inv inv-full reveal">
+            <div class="window-bar"><span class="inv-title"><span class="sprite" data-sprite="shield" data-scale="2"></span>ENGINEERING PRACTICES</span></div>
+            <ul class="slots"><li>Unit testing</li><li>JUnit</li><li>Code review</li><li>Agile / Scrum</li><li>API security</li><li>Database migrations</li><li>Staged rollouts</li><li>Secure model deployment</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <h2><span class="slash">/</span> education</h2>
+          <span class="head-rule" aria-hidden="true"></span>
+          <span class="sprite head-icon" data-sprite="book" data-scale="3" aria-hidden="true"></span>
+        </header>
+
+        <div class="saves">
+          <article class="panel card save reveal">
+            <span class="save-slot">SLOT 01</span>
+            <h3>Syracuse University</h3>
+            <p class="org">M.S., Computer Science <span>· Syracuse, NY</span></p>
+            <div class="save-meta"><span>GPA 4.0 / 4.0</span><time>May 2027</time></div>
+            <p class="small">Algorithms, Operating Systems, Database Systems, Systems &amp; Network Programming</p>
+          </article>
+          <article class="panel card save reveal">
+            <span class="save-slot">SLOT 02</span>
+            <h3>University of Southern Maine</h3>
+            <p class="org">B.S., Computer Science <span>· Portland, ME</span></p>
+            <div class="save-meta"><span>GPA 3.8 / 4.0</span><time>May 2025</time></div>
+            <p class="small">Teaching Assistant — Introduction to Algorithms, Macroeconomics</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <h2><span class="slash">/</span> contact</h2>
+          <span class="head-rule" aria-hidden="true"></span>
+          <span class="sprite head-icon" data-sprite="envelope" data-scale="3" aria-hidden="true"></span>
+        </header>
+
+        <div class="dialog panel reveal">
+          <span class="sprite npc" data-sprite="bunny" data-scale="6" aria-hidden="true"></span>
+          <div class="dialog-body">
+            <p class="speaker">ANUSHA</p>
+            <p class="dialog-text" id="dialogText">I'm looking for a full-time software engineering role in 2027. If your team ships products people rely on, I'd love to talk.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="mailto:ansa0x.dev@gmail.com">EMAIL ME</a>
+                <a class="btn btn-ghost" href="https://www.linkedin.com/in/anushaghimire01/" target="_blank" rel="noopener">LINKEDIN</a>
+              <a class="btn btn-ghost" href="https://github.com/ansa0x" target="_blank" rel="noopener">GITHUB</a>
+            </div>
+            <p class="small mono">ansa0x.dev@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <svg class="hills foot" data-hills="foot" preserveAspectRatio="none" aria-hidden="true"></svg>
+    <div class="wrap footer-inner">
+      <p class="label">THANKS FOR PLAYING</p>
+      <p class="small">© <span id="year">2026</span> Anusha Ghimire</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
