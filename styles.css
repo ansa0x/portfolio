@@ -1325,68 +1325,19 @@ h3, .xp-tab-name {
 .photo-frame { aspect-ratio: 5 / 6; }
 .photo-frame img { object-fit: cover; object-position: center top; }
 
-/* =========================================================
-   Hero portrait: background-removed photo, no box.
-   Cream outline + offset lavender edge give a 3D sticker look.
-   ========================================================= */
-.hero-portrait {
-  position: relative;
-  margin: 0;
-  display: grid;
-  place-items: end center;
-  aspect-ratio: 5 / 6;
-}
-.portrait-glow {
-  position: absolute;
-  left: 8%; right: 8%; top: 12%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(185, 168, 236, .32) 0 35%, rgba(159, 229, 227, .10) 55%, transparent 70%);
-  pointer-events: none;
-}
-.portrait-cutout {
-  position: relative;
-  display: block;
-  width: 100%;
-  filter:
-    drop-shadow(3px 0 0 var(--cream))
-    drop-shadow(-3px 0 0 var(--cream))
-    drop-shadow(0 3px 0 var(--cream))
-    drop-shadow(0 -3px 0 var(--cream))
-    drop-shadow(8px 8px 0 var(--lavender-deep))
-    drop-shadow(6px 14px 0 rgba(4, 6, 20, .45));
-  animation: bob 3.2s steps(2) infinite;
-  /* The photo is cropped flat at the chest and at the left shoulder. Masking the
-     outlined element (masks apply after filters) fades photo and outline together. */
-  -webkit-mask-image: linear-gradient(to top, transparent 2%, #000 26%), linear-gradient(to right, transparent 0%, #000 16%);
-  -webkit-mask-composite: source-in;
-          mask-image: linear-gradient(to top, transparent 2%, #000 26%), linear-gradient(to right, transparent 0%, #000 16%);
-          mask-composite: intersect;
-}
-.portrait-cutout img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.hero-portrait .photo-placeholder {
-  inset: 0;
-  background: none;
-}
-.hero-portrait.no-photo .portrait-cutout { display: none; }
-.hero-portrait.no-photo .photo-placeholder { display: flex; }
-@media (max-width: 860px) {
-  .hero-card-wrap { width: min(72%, 280px); }
-}
 
-/* portrait inside the character-select card: no inner box, just the outlined cutout */
-.card-portrait { margin: 26px 26px 0; }
-.player-card .portrait-cutout { animation: none; }   /* the card already bobs */
-.card-portrait .corner { z-index: 2; }
-.card-portrait .portrait-cutout {
-  width: 88%;
-  transform: translateX(7%);
-  -webkit-mask-image: linear-gradient(to top, transparent 2%, #000 24%), linear-gradient(to right, transparent 0%, #000 9%);
-          mask-image: linear-gradient(to top, transparent 2%, #000 24%), linear-gradient(to right, transparent 0%, #000 9%);
-}
 /* opening one card's details shouldn't stretch its neighbours */
 .projects-small { align-items: start; }
+
+/* pixel dusk scene behind the portrait (replaces the night-sky backdrop) */
+.photo-frame.scene { background: #f5c6b0; }
+.photo-frame.scene::before,
+.photo-frame.scene::after { display: none; }
+.frame-scene {
+  position: absolute;
+  inset: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  z-index: 0;
+  display: block;
+}
